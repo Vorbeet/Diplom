@@ -1,0 +1,74 @@
+﻿<Page x:Class="Diplomnaya.MainPage.RolesPages.InfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Diplomnaya.MainPage.RolesPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="1200"
+      Title="InfoPage">
+
+    <Grid Background="#8ebfed">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="650"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Фамилия" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Surname}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Имя" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Name}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Отчество" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Patronymic}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Дата рождения" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Birth}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Идентификатор матери" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Mother}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Идентификатор отца" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Father}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+            </StackPanel>
+            <StackPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Место проживания" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Residence}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Место прописки" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Adress}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Паспорт" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Passport}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Номер телефона" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Telephone}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Статус" Width="auto" Height="50" Margin="10" Foreground="White"  FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBox Text="{Binding Status}" Width="350" Height="50" Margin="10" Background="#67a3db" Foreground="White" BorderBrush="White" FontSize="38" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </DockPanel>
+            </StackPanel>
+        </DockPanel>
+        <DockPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0">
+            <Button Content="Сохранить" Click="SaveBTN_Click" Name="SaveBTN" Margin="10"  Width="250" Height="60" Foreground="White" BorderBrush="White" Background="#67a3db" FontSize="38" FontWeight="DemiBold"/>
+            <Button Content="Назад" Click="Cancel_Click" Name="Cancel" Margin="10" Width="250" Height="60" Foreground="White" BorderBrush="White" Background="#67a3db" FontSize="38" FontWeight="DemiBold"/>
+        </DockPanel>
+    </Grid>
+</Page>
